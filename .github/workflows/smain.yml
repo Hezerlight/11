@@ -1,0 +1,12 @@
+name: "my workflow"
+on:
+  workflow_dispatch:
+
+jobs:
+  install-state-tool-cli:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: gscho/setup-state-tool@v1
+    - name: run help command
+      run: state --help
