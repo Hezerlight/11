@@ -1,0 +1,2 @@
+              - name: Setup State Tool CLI
+                uses: gscho/setup-state-tool@v1
